@@ -11,7 +11,7 @@ trie = Trie()
 
 def load_words():
     """Load words from the words.txt file and insert them into the trie"""
-    words_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'words.txt')
+    words_file = os.path.join(os.path.dirname(__file__), 'data', 'words.txt')
     print(f"Loading words from: {words_file}")
     
     try:
