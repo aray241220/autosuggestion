@@ -38,9 +38,9 @@ def get_suggestions():
     suggestions = trie.get_suggestions(query, limit)
     return jsonify(suggestions)
 
+load_words()
 if __name__ == '__main__':
     print("Starting Flask server...")
     print("Loading words into trie...")
-    load_words()
     print("Trie loaded. Server ready!")
     app.run(debug=True, port=5000)
