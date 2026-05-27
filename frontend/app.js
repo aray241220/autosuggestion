@@ -2,8 +2,8 @@ const searchInput = document.getElementById('searchInput');
 const suggestionsDropdown = document.getElementById('suggestionsDropdown');
 
 let debounceTimer = null;
-const DEBOUNCE_DELAY = 250; // 250ms between keystrokes
-const API_URL = 'http://localhost:5000/api/suggestions';
+const DEBOUNCE_DELAY = 100; // 250ms between keystrokes
+const API_URL = 'https://autosuggestion-tau.vercel.app/api/suggestions';
 
 searchInput.addEventListener('input', handleInput);
 searchInput.addEventListener('keydown', handleKeydown);
