@@ -15,7 +15,7 @@ def load_words():
     print(f"Loading words from: {words_file}")
     
     try:
-        with open(words_file, 'r', encoding='utf-16') as f:
+        with open(words_file, 'r', encoding='utf-8') as f:
             count = 0
             for line in f:
                 word = line.strip()
